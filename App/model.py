@@ -63,7 +63,10 @@ def addTag(taglist, tag):
     """
     lt.addLast(taglist, tag)
 
-
+def addBooksTags(booksTagsfile):
+    booksTags = lt.newList(datastructure='SINGLE_LINKED',
+                       filename=booksTagsfile)
+    return booksTags
 def createTagList():
     """
     Esta funcion crea una lista vacia.  Esta lista se utilizara
@@ -71,3 +74,4 @@ def createTagList():
     """
     taglist = lt.newList(datastructure='SINGLE_LINKED')
     return taglist
+    
